@@ -12,7 +12,7 @@ const Timer = ({breakState, sessionState, setBreakState, setSessionState, isPlay
       }
     }, 1000);
     return () => clearInterval(intervalId);
-  }, [isPlay, isBreak]);
+  }, [isPlay, isBreak, setBreakState, setSessionState]);
   // const audio = new Audio("https://raw.githubusercontent.com/freeCodeCamp/cdn/master/build/testable-projects-fcc/audio/BeepSound.wav");
   if (breakState.timer === 0) {
     setIsBreak(() => false);
